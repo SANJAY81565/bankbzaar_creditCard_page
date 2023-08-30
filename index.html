@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANKBAZAAR-02</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container-fluid">
+        <section class="row">
+            <section class="header col-12 d-flex justify-content-between border border-1" id="navbar">
+                <div class="nav d-flex align-items-center justify-content-between">
+                    <img src="./Images/bankbazaar-logo.svg" alt="" srcset="" height="40px" class="logo-img" role="button" onclick="handleFreeCreditScoreButtonClick()">
+
+                    <div class="nav-left-left col-5 d-flex pt-1 text-white justify-content-between align-items-center pt-3 ps-2">
+                        <div class="dropdown" id="loansDropdown">
+                            <p role="button" class="dropdown-toggle">LOANS</p>
+                            <div class="dropdown-menu show">
+                                <a href="#" class="dropdown-item">Personal Loan</a>
+                                <a href="#" class="dropdown-item">Home Loan</a>
+                                <a href="#" class="dropdown-item">Car loan</a>
+                                <a href="#" class="dropdown-item">Two wheeler loan</a>
+                            </div>
+                        </div>
+                        <div class="dropdown" id="cardsDropdown">
+                            <p role="button" class="dropdown-toggle">CARDS</p>
+                            <div class="dropdown-menu CardsDropdown1 show">
+                                <a href="#" class="dropdown-item one">credit cards</a>
+                                <a href="#" class="dropdown-item one">debit cards</a>
+                            </div>
+                        </div>
+                        <div class="dropdown" id="investmentsDropdown2">
+                            <p role="button" class="dropdown-toggle">INVESTMENTS</p>
+                            <div class="dropdown-menu investmentDropdown1 show">
+                                <a href="#" class="dropdown-item two">Mutual funds</a>
+                                <a href="#" class="dropdown-item two">Fixed deposit</a>
+                                <a href="#" class="dropdown-item two">Savings account</a>
+                                <a href="#" class="dropdown-item two">Gold rate</a>
+                                <a href="#" class="dropdown-item two">Silver rate</a>
+                                <a href="#" class="dropdown-item two">Best RD rates</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="./Images/get free credit score.gif" onclick="handleFreeCreditScoreButtonClick()" class="nav-img ms-2" role="button">
+                </div>
+
+                    <div class="d-flex col-2 justify-content-between align-items-center pt-3 text-white">
+                        <p role="button"><i class="bi bi-geo-alt"></i>Track applications</p>
+                        <p role="button">Login</p>
+                        <p class="nav-bar-bars fs-3" role="button"><i class="bi bi-list"></i></p>
+                    </div>
+
+            </section>
+            <section class="head">
+                <a href="#">Home</a>
+                <a href="#">Credit Cards</a>
+                <a href="#">RBL Bank Credit Cards</a>
+                <a href="#">RBL Bank BankBazaar SaveMax Credit Card</a>
+                <h4 class="heading">RBL Bank BankBazaar SaveMax Credit Card</h4>
+            </section>
+            <section class="d-flex justify-content-center text-white subHead">
+                <h5>Top RBL BANK Credit Cards</h5>
+            </section>
+            <section class="subSubHead d-flex justify-content-center fs-5 mt-3">
+                <p>Type of employment</p>
+            </section>
+            <section class="employmentType d-flex flex-wrap justify-content-center align-items-center">
+                <div class="employmentTypeDiv col-md-3 d-flex flex-column align-items-center">
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <label class="text-center">
+                            <div class="circular-image">
+                                <img src="./images/salaried.jpeg" alt="salaried Image" class="rounded-circle" width="100%">
+                            </div>
+                            <input type="radio" name="selectedImage" value="image1.jpg">
+                        </label>
+                        <div class="mt-2">
+                            <h6 class="employmentTypeText">Salaried</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="employmentTypeDiv col-md-3 d-flex flex-column align-items-center">
+                    <div class=" col-md-3 d-flex flex-column align-items-center">
+                        <label class="text-center">
+                        <div class="circular-image" >
+                            <img src="./images/business-owners.jpg" alt="business Image" class="img-fluid rounded-circle" height="50px">
+                        </div>
+                        <input type="radio" name="selectedImage" value="image2.jpg">
+                        </label>
+                        <div class="mt-2">
+                            <h6 class="employmentTypeText">Business owner</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="employmentTypeDiv col-md-3 d-flex flex-column align-items-center">
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <label class="text-center">
+                        <div class="circular-image" >
+                            <img src="./images/selfEmployed.jpeg" alt="selfEmployed Image" class="img-fluid rounded-circle">
+                        </div>
+                        <input type="radio" name="selectedImage" value="image3.jpg">
+                        </label>
+                        <div class="mt-2">
+                            <h6 class="employmentTypeText">employed Professional</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="employmentTypeDiv col-md-3 d-flex flex-column align-items-center">
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <label class="text-center">
+                        <div class="circular-image" >
+                            <img src="./images/independentWorker.jpeg" alt="independentWorker Image" class="img-fluid rounded-circle">
+                        </div>
+                        <input type="radio" name="selectedImage" value="image4.jpg">
+                        </label>
+                        <div class="mt-2">
+                            <h6 class="employmentTypeText">Independent worker</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="employmentTypeDiv col-md-4 d-flex flex-column align-items-center">
+                    <div class="col-md-4 d-flex flex-column align-items-center">
+                        <label class="text-center">
+                        <div class="circular-image" >
+                            <img src="./images/student.jpeg" alt="student Image" class="img-fluid rounded-circle">
+                        </div>
+                        <input type="radio" name="selectedImage" value="image5.jpg">
+                        </label>
+                        <div class="mt-0">
+                        <h6 class="employmentTypeText">Student</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="employmentTypeDiv col-md-4 d-flex flex-column align-items-center">
+                    <div class="col-md-4 d-flex flex-column align-items-center">
+                        <label class="text-center">
+                        <div class="circular-image" >
+                            <img src="./images/retaired.jpeg" alt="retaired Image" class="img-fluid rounded-circle">
+                        </div>
+                        <input type="radio" name="selectedImage" value="image6.jpg">
+                        </label>
+                        <div class="mt-0">
+                        <h6 class="employmentTypeText">Retired</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="employmentTypeDiv col-md-4 d-flex flex-column align-items-center">
+                    <div class="col-md-4 d-flex flex-column align-items-center">
+                        <label class="text-center">
+                        <div class="circular-image" >
+                            <img src="./images/homeMaker.jpeg" alt="homeMaker Image" class="img-fluid rounded-circle">
+                        </div>
+                        <input type="radio" name="selectedImage" value="image7.jpg">
+                        </label>
+                        <div class="mt-0">
+                        <h6 class="employmentTypeText">Homemaker</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center mt-3">
+                    <button class="btn btn-success">Continue</button>
+                </div>
+            </section>
+            <section class="about d-flex justify-content-center mt-3">
+                <p>The RBL Bank BankBazaar SaveMax Credit Card is a lifetime free credit card that offers a wide range of attractive rewards and cashbacks. The card also comes with a free monthly credit advisory on BankBazaar which will help you track your spends and monitor your credit score. The credit card also comes with balance transfer, EMI conversion, and pre-approved loan facility.</p>
+            </section>
+            <section class="about1 d-flex justify-content-end py-2 mb-4 shadow">
+                <img src="./images/fb_like.png" alt="" type ='button'>
+                <img src="./images/fb_share.png" alt="" type ='button'>
+            </section>
+            <section class="secondSub">
+                <p>We found 1 RBL Bank BankBazaar SaveMax Credit Card</p>
+            </section>
+            <section class="creditCardSection d-flex">
+                <div class="creditCard d-flex border border-1 p-2">
+                    <div><img src="./images/rbl-bankbazaar-savemax-credit-card_1.png" alt=""></div>
+                    <div>RBL Bank BankBazaar SaveMax Credit Card</div>
+                </div>
+                <div class="creditCard0 border border-1 d-flex justify-content-center align-items-center">₹ 0</div>
+                <div class="creditCard1 border border-1 d-flex justify-content-center align-items-center dropdown">
+                    <button class="btn btn-link dropdown-toggle" type="button" id="creditCardDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="creditCardDropdown">
+                        <li class="dropdown-item">
+                            <strong>Rewards Program:</strong> Groceries: 100 = 5 points
+                        </li>
+                        <li class="dropdown-item">
+                            <strong>Annual Fee:</strong> ₹0 (No annual fee)
+                        </li>
+                        <li class="dropdown-item">
+                            <strong>Features:</strong> Free monthly Credit Advisory, Fuel Surcharge Waiver
+                        </li>
+                        <li class="dropdown-item">
+                            <strong>Additional Benefits:</strong> Cashback offers, Dining discounts
+                        </li>
+                        <li class="dropdown-item">
+                            <strong>Eligibility:</strong> Income criteria, Age criteria
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="creditCard2 border border-1 d-flex justify-content-center align-items-center">Free monthly Credit Advisory</div>
+                <div class="creditCard3 border border-1 d-flex justify-content-center align-items-center">
+                    <button class="btn btn-outline-info">Apply</button>
+                </div>
+            </section>
+            
+            <section class="Highlights">
+                <h5>Key Highlights of the RBL Bank BankBazaar SaveMax Credit Card</h5>
+                <ul>
+                    <li>Convert all spends over Rs.2,500 into easy EMIs.</li>
+                    <li>Xpress Cash facility for instant funds into your account.</li>
+                    <li>Pre-approved loan without documentation or blocking of credit limit.</li>
+                    <li>Add up to five complimentary cards.</li>
+                    <li>Balance transfer facility with low interest rate and EMI options to repay other credit cards.</li>
+                    <li>Up to 100% discounts using EMI Infinity Pass on the Split n Pay Fee.</li>
+                    <li>Manage your credit card, pay utility bills, get merchant offers and instant loans through the RBL Bank MyCard App.</li>
+                    <li>Contactless payments in a fast and secure manner of up to Rs.5,000 in retail outlets.</li>
+                </ul>
+            </section>
+            <section class="Highlights">
+                <h5>Features and Benefits of the RBL Bank BankBazaar SaveMax Credit Card</h5>
+                <p>Here are the prominent features and benefits of the RBL Bank BankBazaar SaveMax Credit Card:</p>
+            </section>
+            <section class="Highlights">
+                <h6>Rewards Program:</h6>
+                <ul>
+                    <li>Earn 5x Reward Points (RP) on grocery spends (maximum 1000 RP per month).</li>
+                    <li>Earn 1 RP on every Rs.100 spent on other categories.</li>
+                </ul>
+            </section>
+            <section class="Highlights">
+                <h6>Cashback Offers:</h6>
+                <ul>
+                    <li>10% cashback (up to Rs.100 every month on each merchant) on BookMyShow and Zomato transactions</li>
+                </ul>
+            </section>
+            <section class="creditCardButtonSection">
+                <button class="creditCardButton btn btn-outline-danger" >Apply credit Card on Bankbazaar</button>
+            </section>
+            <section class="Highlights">
+                <h5>How to Make Payments for RBL Bank BankBazaar SaveMax Credit Card</h5>
+                <h6>You can easily make payments on your RBL Bank BankBazaar SaveMax Credit Card through any of the following payment modes:</h6>
+                <ul>
+                    <li>UPI payments</li>
+                    <li>NEFT</li>
+                    <li>Net Banking</li>
+                    <li>Debit cards</li>
+                    <li>Cheque</li>
+                    <li>Cash</li>
+                    <li>NACH/SI</li>
+                </ul>
+            </section>
+            <section class="Highlights">
+                <h5>RBL Bank BankBazaar SaveMax Credit Card Customer Care</h5>
+                <h6>You can get in touch with <a href="" class="fs-6">RBL Bank credit card customer care</a> for any questions or concerns about your credit card through the following ways:</h6>
+                <ul>
+                    <li>Customer care helpline number: <a href="" class="fs-6"> 022-62327777</a></li>
+                    <li>Customer care email address: <a href="" class="fs-6">cardservices@rblbank.com</a></li>
+                </ul>
+            </section>
+            <section class="creditCardButtonSection">
+                <button class="creditCardButton btn btn-outline-danger" >Find a card</button>
+            </section>
+            <section class="Highlights">
+                <h5 class="">FAQs on RBL Bank BankBazaar SaveMax Credit Card</h5>
+                <ol>
+                    <li class="fw-bold" id="fw-bold">How do I get my RBL Bank BankBazaar SaveMax Credit Card statement?</li>
+                    <p>You can view or download your RBL Bank BankBazaar SaveMax Credit Card statement through the RBL MyCard App, through the netbanking portal on the bank's</p>
+                    <li class="fw-bold" id="fw-bold">Who can I add as a complimentary cardholder for the RBL Bank BankBazaar SaveMax Credit Card?</li>
+                    <p>You can view or download your RBL Bank BankBazaar SaveMax Credit Card statement through the RBL MyCard App, through the netbanking portal on the bank's</p>
+                    <li class="fw-bold" id="fw-bold">How do I convert my purchases to EMIs on the RBL Bank BankBazaar SaveMax Credit Card?</li>
+                    <p>You can view or download your RBL Bank BankBazaar SaveMax Credit Card statement through the RBL MyCard App, through the netbanking portal on the bank's</p>
+                    <li class="fw-bold" id="fw-bold">How do I repay a loan taken against the RBL Bank BankBazaar SaveMax Credit Card?</li>
+                    <p>You can view or download your RBL Bank BankBazaar SaveMax Credit Card statement through the RBL MyCard App, through the netbanking portal on the bank's</p>
+                    <li class="fw-bold" id="fw-bold">How do I get my RBL Bank BankBazaar SaveMax Credit Card statement?</li>
+                    <p>You can view or download your RBL Bank BankBazaar SaveMax Credit Card statement through the RBL MyCard App, through the netbanking portal on the bank's</p>
+                </ol>
+            </section>
+            <footer class="footer-sec1 col-12 d-flex align-items-center">
+                <section class="col-9 d-flex justify-content-center justify-content-evenly m-auto align-items-center text-white">
+                    <h6 class="fw-light text-secondary" role="button">Credit Cards</h6>
+                    <h6 class="fw-light text-secondary" role="button">Personal Loan</h6>
+                    <h6 class="fw-light text-secondary" role="button">Investments</h6>
+                    <h6 class="fw-light text-secondary" role="button">Savings Account</h6>
+                    <h6 class="fw-light text-secondary" role="button">Saving Schemes</h6>
+                    <h6 class="fw-light text-secondary" role="button">Life Insurance</h6>
+                    <h6 class="fw-light text-secondary" role="button">Health Insurance</h6>
+            </footer>
+
+            <nav class="footer-nav d-flex justify-content-center text-white border border-1 border-secondary">
+                <ul>
+                    <li class="fw-bold">Home Loan</li>
+                    <li class="text-secondary">SBI Home Loan</li>
+                    <li class="text-secondary">HDFC Home Loan</li>
+                    <li class="text-secondary">Axis Home Loan</li>
+                </ul>
+
+                <ul>
+                    <li class="fw-bold">Home Loan</li>
+                    <li class="text-secondary">SBI Home Loan</li>
+                    <li class="text-secondary">HDFC Home Loan</li>
+                    <li class="text-secondary">Axis Home Loan</li>
+                </ul>
+
+                <ul>
+                    <li class="fw-bold">Home Loan</li>
+                    <li class="text-secondary">SBI Home Loan</li>
+                    <li class="text-secondary">HDFC Home Loan</li>
+                    <li class="text-secondary" class="text-secondary">Axis Home Loan</li>
+                </ul>
+
+                <ul>
+                    <li class="fw-bold">Home Loan</li>
+                    <li class="text-secondary">SBI Home Loan</li>
+                    <li class="text-secondary">HDFC Home Loan</li>
+                    <li class="text-secondary">Axis Home Loan</li>
+                </ul>
+
+            </nav>
+
+            <section class="footer-sec-2 text-white d-flex justify-content-center align-items-center pt-3"><p>Others : CIBIL | Tax Bank | IFSC Code | Indian Holidays | Saving Schemes | In The News</p></section>
+            <section class="footer-img"><img src="./Images/footer.png" alt="" width="" class="footer-img-img"></section>
+        </footer>
+        </section> 
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        function handleFreeCreditScoreButtonClick() {
+        alert("Get your free credit score!");
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+        const dropdowns = document.querySelectorAll(".dropdown");
+
+        dropdowns.forEach(function (dropdown) {
+            const button = dropdown.querySelector(".dropdown-toggle");
+            const menu = dropdown.querySelector(".dropdown-menu");
+
+            dropdown.addEventListener("mouseover", function () {
+                menu.classList.add("show");
+            });
+
+            dropdown.addEventListener("mouseout", function () {
+                menu.classList.remove("show");
+            });
+        });
+    });
+
+    </script>
+    
+</body>
+</html>
